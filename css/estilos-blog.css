@@ -26,6 +26,17 @@
   border-bottom: 1px solid #eeeeee;
 }
 
+/* Imagen que acompaña a cada post: ocupa el ancho de la tarjeta y se recorta
+   a una altura uniforme sin deformarse */
+.post-imagen {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--radio);
+  margin-bottom: 1rem;
+}
+
 .post-contenido {
   text-align: justify;
 }
