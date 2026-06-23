@@ -2,7 +2,7 @@
 Aldo Garza Ramírez
 
 # Instrucciones
-Para abrir la páina es necesario abrir index.html con cualquier navergador
+Para abrir la página es necesario abrir index.html con cualquier navergador
 
 # Herramientas utilizadas
 HTML, CSS y JavaScript
