@@ -1,0 +1,133 @@
+/* Variables de color y medidas reutilizables en toda la página */
+:root {
+  --color-principal: #2c3e50;   /* Azul oscuro para barras y títulos */
+  --color-acento: #2980b9;      /* Azul para enlaces y botones */
+  --color-fondo: #f4f6f8;       /* Gris muy claro para el fondo */
+  --color-tarjeta: #ffffff;     /* Blanco para las tarjetas de post */
+  --color-texto: #333333;       /* Gris oscuro para el texto */
+  --color-texto-suave: #777777; /* Gris para textos secundarios (fechas) */
+  --ancho-maximo: 800px;          /* Ancho máximo del contenido central */
+  --radio: 8px;                   /* Redondeo de esquinas */
+}
+
+/* Reinicio básico: quita márgenes por defecto y usa un modelo de caja predecible */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del documento */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* Barra de navegación superior (navbar) */
+body > header {
+  background-color: var(--color-principal);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Barra con la información del autor (buttonbar) */
+.barra-autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nombre-autor {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-principal);
+}
+
+.botones-autor {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Botones reutilizables */
+.boton {
+  display: inline-block;
+  background-color: var(--color-acento);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radio);
+  font-size: 0.9rem;
+}
+
+.boton:hover {
+  background-color: var(--color-principal);
+}
+
+/* Contenido principal: lista de posts */
+main {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Cada post se muestra como una tarjeta */
+.post {
+  background-color: var(--color-tarjeta);
+  border-radius: var(--radio);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del post: grande y destacado */
+.post-titulo {
+  color: var(--color-principal);
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Fecha del post: actúa como subtítulo bajo el título */
+.post-fecha {
+  display: block;
+  color: var(--color-texto-suave);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.post-contenido {
+  text-align: justify;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  color: var(--color-texto-suave);
+  padding: 1.5rem 1rem;
+}
