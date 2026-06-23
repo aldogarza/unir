@@ -25,7 +25,7 @@
   <section class="barra-autor">
     <p class="nombre-autor">Aldo Garza Ramírez</p>
     <div class="botones-autor">
-      <a href="login.html" class="boton">Iniciar sesión</a>
+      <a href="login.html" class="boton" id="boton-sesion">Iniciar sesión</a>
       <a href="nuevo-post.html" class="boton">Nuevo post</a>
     </div>
   </section>
@@ -34,7 +34,7 @@
   <main>
     <section class="formulario">
       <h1>Nuevo post</h1>
-      <!-- El formulario aún no guarda nada; eso se programa con JS en la Etapa 5 -->
+      <!-- El envío del formulario lo gestiona nuevo-post.js (guarda el post en el navegador) -->
       <form>
         <label for="titulo">Título</label>
         <input type="text" id="titulo" name="titulo">
@@ -51,6 +51,11 @@
   <footer>
     <p>&copy; 2026 Aldo Garza Ramírez — Blog personal</p>
   </footer>
+
+  <!-- Scripts: sesión, almacenamiento de posts y lógica de esta página -->
+  <script src="sesion.js"></script>
+  <script src="posts.js"></script>
+  <script src="nuevo-post.js"></script>
 
 </body>
 

@@ -25,7 +25,7 @@
   <section class="barra-autor">
     <p class="nombre-autor">Aldo Garza Ramírez</p>
     <div class="botones-autor">
-      <a href="login.html" class="boton">Iniciar sesión</a>
+      <a href="login.html" class="boton" id="boton-sesion">Iniciar sesión</a>
       <a href="nuevo-post.html" class="boton">Nuevo post</a>
     </div>
   </section>
@@ -34,7 +34,7 @@
   <main>
     <section class="formulario">
       <h1>Iniciar sesión</h1>
-      <!-- El formulario aún no valida nada; eso se programa con JS en la Etapa 5 -->
+      <!-- El envío del formulario lo gestiona login.js (acepta cualquier dato) -->
       <form>
         <label for="usuario">Usuario</label>
         <input type="text" id="usuario" name="usuario">
@@ -51,6 +51,10 @@
   <footer>
     <p>&copy; 2026 Aldo Garza Ramírez — Blog personal</p>
   </footer>
+
+  <!-- Scripts: primero el de sesión y luego el del formulario de login -->
+  <script src="sesion.js"></script>
+  <script src="login.js"></script>
 
 </body>
 
