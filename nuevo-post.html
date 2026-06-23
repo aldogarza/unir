@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo post - Blog de Aldo Garza Ramírez</title>
+  <!-- Estilos generales a todo el sitio + estilos propios de nuevo post -->
+  <link rel="stylesheet" href="estilos-generales.css">
+  <link rel="stylesheet" href="estilos-post.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación superior (navbar) -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Barra con la información del autor (buttonbar) -->
+  <section class="barra-autor">
+    <p class="nombre-autor">Aldo Garza Ramírez</p>
+    <div class="botones-autor">
+      <a href="login.html" class="boton">Iniciar sesión</a>
+      <a href="nuevo-post.html" class="boton">Nuevo post</a>
+    </div>
+  </section>
+
+  <!-- Contenido principal: formulario para crear un post -->
+  <main>
+    <section class="formulario">
+      <h1>Nuevo post</h1>
+      <!-- El formulario aún no guarda nada; eso se programa con JS en la Etapa 5 -->
+      <form>
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" name="titulo">
+
+        <label for="contenido">Contenido</label>
+        <textarea id="contenido" name="contenido" rows="6"></textarea>
+
+        <button type="submit" class="boton">Publicar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Aldo Garza Ramírez — Blog personal</p>
+  </footer>
+
+</body>
+
+</html>

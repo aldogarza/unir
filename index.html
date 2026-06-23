@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog de Aldo Garza Ramírez</title>
-  <!-- Hoja de estilos de la página -->
-  <link rel="stylesheet" href="estilos.css">
+  <!-- Estilos generales a todo el sitio + estilos propios del blog -->
+  <link rel="stylesheet" href="estilos-generales.css">
+  <link rel="stylesheet" href="estilos-blog.css">
 </head>
 
 <body>
@@ -23,26 +24,25 @@
   <!-- Barra con la información del autor (buttonbar) -->
   <section class="barra-autor">
     <p class="nombre-autor">Aldo Garza Ramírez</p>
-    <!-- Botones que en etapas futuras llevarán a otras páginas (de momento son marcadores) -->
+    <!-- Botones que llevan a las otras páginas del sitio -->
     <div class="botones-autor">
-      <a href="#" class="boton">Iniciar sesión</a>
-      <a href="#" class="boton">Nuevo post</a>
+      <a href="login.html" class="boton">Iniciar sesión</a>
+      <a href="nuevo-post.html" class="boton">Nuevo post</a>
     </div>
   </section>
 
   <!-- Contenido principal: aquí van los posts del blog -->
   <main>
 
-    <!-- Tercer post: CSS -->
+    <!-- Primer post del blog -->
     <article class="post">
       <header class="post-cabecera">
-        <h2 class="post-titulo">Estilos con CSS</h2>
-        <time class="post-fecha" datetime="2026-06-23">23 de junio de 2026</time>
+        <h2 class="post-titulo">Mi primer post</h2>
+        <time class="post-fecha" datetime="2026-06-21">22 de junio de 2026</time>
       </header>
       <p class="post-contenido">
-        CSS me permitió separar el contenido de una manera mas grafica y visual, 
-        haciendo que la página sea más atractiva y fácil de leer, ademas nos permite 
-        ver el contenido en diferentes tamaños de pantalla.
+        ¡Hola! Este es mi primer post en el blog. Aquí iré compartiendo lo que
+        voy aprendiendo durante el desarrollo de este proyecto, paso a paso.
       </p>
     </article>
 
@@ -60,15 +60,29 @@
       </p>
     </article>
 
-    <!-- Primer post del blog -->
+    <!-- Tercer post: CSS -->
     <article class="post">
       <header class="post-cabecera">
-        <h2 class="post-titulo">Mi primer post</h2>
-        <time class="post-fecha" datetime="2026-06-21">21 de junio de 2026</time>
+        <h2 class="post-titulo">Estilos con CSS</h2>
+        <time class="post-fecha" datetime="2026-06-23">22 de junio de 2026</time>
       </header>
       <p class="post-contenido">
-        ¡Hola! Este es mi primer post en el blog. Aquí iré compartiendo lo que
-        voy aprendiendo durante el desarrollo de este proyecto, paso a paso.
+        CSS me permitió separar el contenido de una manera mas grafica y visual, 
+        haciendo que la página sea más atractiva y fácil de leer, ademas nos permite 
+        ver el contenido en diferentes tamaños de pantalla.
+      </p>
+    </article>
+
+    <!-- Cuarto post: separar archivos HTML y CSS -->
+    <article class="post">
+      <header class="post-cabecera">
+        <h2 class="post-titulo">Separar archivos HTML y CSS</h2>
+        <time class="post-fecha" datetime="2026-06-24">22 de junio de 2026</time>
+      </header>
+      <p class="post-contenido">
+        Al separar los archivos HTML y CSS, podemos mantener nuestro código más organizado 
+        y fácil de mantener. Esto nos permite modificar el estilo de toda la página desde 
+        un solo archivo CSS, sin tener que cambiar cada página individualmente.
       </p>
     </article>
 

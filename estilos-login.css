@@ -1,0 +1,4 @@
+/* En el login el formulario es más estrecho, tipo tarjeta de acceso */
+.formulario {
+  max-width: 380px;
+}

@@ -1,0 +1,4 @@
+/* El formulario de "nuevo post" es más ancho para escribir cómodo */
+.formulario {
+  max-width: 640px;
+}

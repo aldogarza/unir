@@ -3,11 +3,11 @@
   --color-principal: #2c3e50;   /* Azul oscuro para barras y títulos */
   --color-acento: #2980b9;      /* Azul para enlaces y botones */
   --color-fondo: #f4f6f8;       /* Gris muy claro para el fondo */
-  --color-tarjeta: #ffffff;     /* Blanco para las tarjetas de post */
+  --color-tarjeta: #ffffff;     /* Blanco para las tarjetas */
   --color-texto: #333333;       /* Gris oscuro para el texto */
   --color-texto-suave: #777777; /* Gris para textos secundarios (fechas) */
-  --ancho-maximo: 800px;          /* Ancho máximo del contenido central */
-  --radio: 8px;                   /* Redondeo de esquinas */
+  --ancho-maximo: 800px;        /* Ancho máximo del contenido central */
+  --radio: 8px;                 /* Redondeo de esquinas */
 }
 
 /* Reinicio básico: quita márgenes por defecto y usa un modelo de caja predecible */
@@ -71,58 +71,70 @@ nav a:hover {
   gap: 0.5rem;
 }
 
-/* Botones reutilizables */
+/* Botones reutilizables (sirven para <a> y para <button>) */
 .boton {
   display: inline-block;
   background-color: var(--color-acento);
   color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  border: none;
   border-radius: var(--radio);
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .boton:hover {
   background-color: var(--color-principal);
 }
 
-/* Contenido principal: lista de posts */
+/* Contenedor central del contenido de cada página */
 main {
   max-width: var(--ancho-maximo);
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Cada post se muestra como una tarjeta */
-.post {
+/* ====== Base común de los formularios (login y nuevo post) ====== */
+/* Tarjeta blanca que envuelve cada formulario */
+.formulario {
   background-color: var(--color-tarjeta);
-  border-radius: var(--radio);
+  margin: 2rem auto;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  border-radius: var(--radio);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Título del post: grande y destacado */
-.post-titulo {
+.formulario h1 {
   color: var(--color-principal);
-  font-size: 1.8rem;
-  margin-bottom: 0.25rem;
-}
-
-/* Fecha del post: actúa como subtítulo bajo el título */
-.post-fecha {
-  display: block;
-  color: var(--color-texto-suave);
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 500;
   margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid #eeeeee;
 }
 
-.post-contenido {
-  text-align: justify;
+/* Apila los campos del formulario uno debajo de otro */
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formulario label {
+  font-weight: bold;
+  color: var(--color-principal);
+  margin-top: 0.5rem;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: var(--radio);
+  font-family: inherit; /* Que el textarea use la misma tipografía que el resto */
+  font-size: 1rem;
+}
+
+.formulario button {
+  margin-top: 1rem;
+  align-self: flex-start; /* El botón no ocupa todo el ancho */
 }
 
 /* Pie de página */

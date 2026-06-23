@@ -1,0 +1,31 @@
+/* Cada post se muestra como una tarjeta */
+.post {
+  background-color: var(--color-tarjeta);
+  border-radius: var(--radio);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del post: grande y destacado */
+.post-titulo {
+  color: var(--color-principal);
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Fecha del post: actúa como subtítulo bajo el título */
+.post-fecha {
+  display: block;
+  color: var(--color-texto-suave);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.post-contenido {
+  text-align: justify;
+}
