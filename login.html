@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Etapa 3: página de inicio de sesión (solo estructura HTML; la validación llega en la Etapa 5) -->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - Blog de Aldo Garza Ramírez</title>
+  <!-- Hoja de estilos de la página -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación superior (navbar) -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Barra con la información del autor (buttonbar) -->
+  <section class="barra-autor">
+    <p class="nombre-autor">Aldo Garza Ramírez</p>
+    <div class="botones-autor">
+      <a href="login.html" class="boton">Iniciar sesión</a>
+      <a href="nuevo-post.html" class="boton">Nuevo post</a>
+    </div>
+  </section>
+
+  <!-- Contenido principal: formulario de inicio de sesión -->
+  <main>
+    <section class="formulario">
+      <h1>Iniciar sesión</h1>
+      <!-- El formulario aún no valida nada; eso se programa con JS en la Etapa 5 -->
+      <form>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario">
+
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena">
+
+        <button type="submit" class="boton">Entrar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Aldo Garza Ramírez — Blog personal</p>
+  </footer>
+
+</body>
+
+</html>
